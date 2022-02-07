@@ -1,0 +1,110 @@
+style.css
+* {
+    box-sizing: border-box;
+    border-left: 3px black;
+    scroll-behavior: smooth;
+}
+body {
+    /* background-color: rgb(199, 231, 252); */
+    background-image: url(https://cdn.shopify.com/s/files/1/2486/4354/products/Peter-Lik-Into-the-Mist-Framed-Recess-Mount_1800x.jpg?v=1585081774);
+    background-size: cover;
+    border: solid 15px rgb(109, 109, 109);
+    scroll-behavior: smooth;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.logomainbox {
+    width: 100%;
+    height: 100px;
+    margin: 1px;
+    background: linear-gradient(#7fbba9, #a6c99f);
+    color: white;
+    position: relative;
+    text-align: justify;
+    display: inline;
+    float: left;
+}
+.menubar {
+    width: 100%;
+    height: 205px;
+    margin: 1px;
+    background: linear-gradient(#aaa820,#0c4047);
+    color: white;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+    font-size: medium;
+    color: white;
+    position: sticky;
+}
+li {
+    display: inline;
+    float: right;
+    margin: 2px;
+    position: relative; bottom: 50px; right: 20px;
+    padding: 10px;
+    color: white;
+    border-right: 3px solid black;
+}
+li a:hover {
+    background-color: white;
+    color: green;
+}
+a:link {
+    color: white;
+}
+a:visited {
+    color: rgb(248, 123, 144);
+}
+a:active {
+    color: yellow;
+}
+img {
+    position:relative;
+    height: 500px;
+    width: 250px;
+    margin: 10px 10px 10px 10px;
+    display: inline-block;
+}
+.textdescription {
+    width: 1500px;
+    height: 570px;
+    margin-left:5%;
+    margin-right:5%;
+    border:5px solid rgb(6, 78, 68);
+    display: inline-block;
+    overflow: auto;
+    background: linear-gradient(#aaa820,#0c4047);
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+    flex-grow: auto;
+    flex-shrink: auto;
+}
+.textdescription img {float: left;}
+
+.box {
+    height: 300px;
+    width: 600px;
+    margin: 20px 20px 20px 20px;
+    display:inline-block;
+    overflow:auto;
+    text-align: left;
+    background: linear-gradient(#7fbba9, #a6c99f);
+    color: white;
+}
+.box img {height: 225px; width: 300px; position:relative; left: 135px;}
+header {
+    border: 2px rgb(255, 255, 255) solid;
+    text-align: center;
+    font-size: x-large;
+    color: black;
+    background-color: gray
+}
+footer {
+    font-size: xx-large;
+    color: white;
+    font-weight: bolder;
+}
