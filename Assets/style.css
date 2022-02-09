@@ -133,13 +133,6 @@ footer {
     font-weight: bolder;
     letter-spacing: 2px;
 }
-/* #nav {
-    display: flex;
-    flex-basis: 25%;
-    flex-wrap: wrap;
-    flex-direction: column;
-} */
-
 /* Textbox media query textdescription */
 @media(max-width: 90rem) {
     .textdescription {
