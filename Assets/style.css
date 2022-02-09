@@ -1,35 +1,41 @@
 style.css
+
+/* Universal selector*/
 * {
-    box-sizing: border-box;
-    border-left: 3px black;
-    scroll-behavior: smooth;
 }
+
+/* This is setting the background image, border, and font for the whole page */
 body {
-    /* background-color: rgb(199, 231, 252); */
     background-image: url(https://cdn.shopify.com/s/files/1/2486/4354/products/Peter-Lik-Into-the-Mist-Framed-Recess-Mount_1800x.jpg?v=1585081774);
     background-size: cover;
-    border: solid 15px rgb(109, 109, 109);
-    scroll-behavior: smooth;
+    border: solid 15px rgb(88, 88, 88);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.logomainbox {
+
+/* This sets all the elements inside the header */
+.headerbox {
     width: 100%;
     height: 100px;
     margin: 1px;
-    background: linear-gradient(#7fbba9, #a6c99f);
+    background: linear-gradient(#aaa820,#0c4047);
     color: white;
     position: relative;
     text-align: justify;
     display: inline;
     float: left;
+    letter-spacing: 2px;
+    flex-wrap: wrap;
 }
-.menubar {
+
+/* This was simply added so I could get a second gradient color underneath for design */
+.bar {
     width: 100%;
     height: 205px;
     margin: 1px;
-    background: linear-gradient(#aaa820,#0c4047);
-    color: white;
+    background: linear-gradient(#659279, #b1beaf );
 }
+/* This
+ is setting the style and fromat for my nav bar items at the top right */
 ul {
     list-style-type: none;
     margin: 0;
@@ -37,8 +43,9 @@ ul {
     text-decoration: underline;
     font-size: medium;
     color: white;
-    position: sticky;
 }
+
+/* This is specific to the list of items in the nav bar, setting style and format */
 li {
     display: inline;
     float: right;
@@ -48,63 +55,124 @@ li {
     color: white;
     border-right: 3px solid black;
 }
+
+/* When you hover over a list item it changes background color and font */
 li a:hover {
     background-color: white;
     color: green;
 }
-a:link {
-    color: white;
-}
+
+/* Once you have visited the link it turns red */
 a:visited {
     color: rgb(248, 123, 144);
 }
-a:active {
-    color: yellow;
-}
-img {
+
+/* This is positioning and size for my pictures */
+.ProfilePic {
     position:relative;
     height: 500px;
     width: 250px;
     margin: 10px 10px 10px 10px;
     display: inline-block;
+    border-radius: 15px;
 }
+
+/* This is my main text box with my photo in it. Setting the style and format */
 .textdescription {
-    width: 1500px;
-    height: 570px;
+    max-width: 1500px;
+    max-height: 1600px;
     margin-left:5%;
     margin-right:5%;
+    margin-top: 20px;
     border:5px solid rgb(6, 78, 68);
     display: inline-block;
-    overflow: auto;
     background: linear-gradient(#aaa820,#0c4047);
     text-align: center;
     font-size: xx-large;
     color: white;
-    flex-grow: auto;
-    flex-shrink: auto;
 }
-.textdescription img {float: left;}
 
+/* This floats the profile picture to the left */
+.textdescription img {
+    float: left;}
+
+/* These are my 4 boxes that are holding the photos */
 .box {
     height: 300px;
-    width: 600px;
+    max-width: 1500px;
+    max-height: fit-content;
     margin: 20px 20px 20px 20px;
     display:inline-block;
-    overflow:auto;
     text-align: left;
-    background: linear-gradient(#7fbba9, #a6c99f);
+    background: linear-gradient(#659279, #b1beaf);
     color: white;
 }
-.box img {height: 225px; width: 300px; position:relative; left: 135px;}
+
+/* Setting the size of the photos in my boxes */
+.box img {
+    height: 225px; width: 300px;
+    }
+
+    /* Enlarging my images when they are hovered over */
+.box :hover {
+transform: scale(1.15);
+}
+
+/* These are the headers on my four boxes */
 header {
     border: 2px rgb(255, 255, 255) solid;
     text-align: center;
     font-size: x-large;
-    color: black;
-    background-color: gray
+    color: whitesmoke;
+    background-color: rgb(88, 88, 88)
 }
+/* This is the footer at the bottom with "Contact Me */
 footer {
     font-size: xx-large;
     color: white;
     font-weight: bolder;
+    letter-spacing: 2px;
 }
+/* #nav {
+    display: flex;
+    flex-basis: 25%;
+    flex-wrap: wrap;
+    flex-direction: column;
+} */
+
+/* Textbox media query textdescription */
+@media(max-width: 90rem) {
+    .textdescription {
+        display:
+    }
+
+
+}
+@media(min-width: 180op) {
+    .menubar {
+    }
+}
+
+@media(max-width: 819px) {
+    li {
+        float: none;
+        margin: 0px;
+        position: inherit;
+    }
+    ul {
+        text-align: center;
+    }
+}
+@media all and (max-width: 400px) {  
+    footer > li {  
+        flex-basis: 100%;  
+    }  
+    .Contact-Me {  
+    order: 1;  
+    }
+/* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
+@media screen and (max-width: 580px) {
+    .menubar {
+padding: 20px 10px !important;
+float: right;
+    }
