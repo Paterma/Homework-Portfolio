@@ -47,6 +47,8 @@ I have met all the requirements for this project including:
 
 I am submitting BOTH of the following for review:
 
-* The URL of the deployed application.
+* The URL of the deployed application- https://paterma.github.io/Homework-Portfolio/
 
-* The URL of the GitHub repository that contains my code. The repository has a unique name and includes this README file that describes the project.
+* The URL of the GitHub repository that contains my code- https://github.com/Paterma/Homework-Portfolio
+
+![Portfolio Screenshot](/Assets/Portfolio screenshot.PNG)
